@@ -1,5 +1,6 @@
 Photographer Portfolio Website
 A modern, responsive portfolio website for photographers built with HTML and SCSS, following the BEM methodology for clean and maintainable code.
+live demo: https://lolasommer.github.io/portfolio-photographer/
 
 🌟 Features
 Responsive Design - Fully responsive layout that works on all devices
@@ -45,4 +46,5 @@ Prerequisites
 Web browser with CSS Grid support
 
 Local server for SCSS compilation (optional)
+
 
