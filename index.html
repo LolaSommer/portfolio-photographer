@@ -18,13 +18,13 @@
                     </a>
                     <nav class="nav" aria-label="Main">
                         <ul class="nav__list">
-                            <li class="nav__item"><a class="nav__link" href="/" aria-current="page">Home</a></li>
-                            <li class="nav__item"><a class="nav__link" href="/">About</a></li>
-                            <li class="nav__item"><a class="nav__link" href="/">Services</a></li>
-                            <li class="nav__item"><a class="nav__link" href="/">Portfolio</a></li>
-                            <li class="nav__item"><a class="nav__link" href="/">Testimonials</a></li>
-                            <li class="nav__item"><a class="nav__link" href="/">News</a></li>
-                            <li class="nav__item"><a class="nav__link" href="/">Contact</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#main" aria-current="page">Home</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#services">Services</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#portfolio">Portfolio</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#testimonials">Testimonials</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#news">News</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -89,7 +89,7 @@
         </div>
     </section>
     
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
             <h2 class="section-title section-title--center">My Services</h2>
             <p class="section-subtitle">Let's Create Something Beautiful Together.</p>
@@ -164,7 +164,7 @@
         </div>
     </section>
     
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container">
             <h2 class="section-title section-title--center">My Portfolio</h2>
             <p class="section-subtitle">Moments and landscapes from around the globe.</p>
@@ -199,7 +199,7 @@
         </div>
     </section>
     
-    <section class="testimonials">
+    <section class="testimonials" id="testimonials">
         <div class="container">
             <h2 class="section-title section-title--center">Testimonials</h2>
             <p class="section-subtitle">Lets check what people say about me and my work</p>
@@ -236,7 +236,7 @@
         </div>
     </section>
     
-    <section class="stats">
+    <section class="stats" id="news">
         <div class="container">
             <div class="stats__grid">
                 <div class="stat" role="group" aria-labelledby="stat1-label" aria-describedby="stat1-count">
@@ -263,7 +263,7 @@
         </div>
     </section>
     
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container">
             <h2 class="section-title section-title--center">Get in Touch</h2>
             <p class="section-subtitle">Have you any question? Send me message without hesitation</p>
@@ -309,6 +309,40 @@
             </div>
         </div>
     </footer>
-    
+    <div class="modal-open thankyou__modal hidden" aria-hidden="true">
+                 <div class="thankyou__overlay"></div>
+                 <div class="thankyou__line">
+                 <button class="thankyou__close" aria-label="close">
+                      <svg class="thankyou__icon"><use href="img/sprite.svg#icon-close"></use></svg>
+                      </button>
+                 <div class="thankyou__window">
+                <h2 class="thankyou__title">Thank you! I’ll get back to you soon.</h2>
+                <div class="thankyou__button">
+                <button class="thankyou__btn">OK</button>
+                </div>
+                </div>
+                </div>
+                </div>
+                <div class="modal-open net__modal hidden">
+                      <div class="net__overlay"></div>
+                      <div class="net__line">
+                      <button class="net__close" aria-label="close">
+                      <svg class="net__icon"><use href="img/sprite.svg#icon-close"></use></svg>
+                      </button>
+                      <div class="net__window">
+                        <div class="net__title">Let’s connect on social media <span class="net__span"></span></div>
+      
+                           <div class="net__group">
+                   <a href="#"  aria-label="X" class="net__item" data-type="twitter"><svg class="net__x-img" aria-hidden="true" focusable="false" ><use xlink:href="img/sprite.svg#X"></use></svg></a>
+                   <a href="#"  aria-label="instagram" class="net__item" data-type="instagram"><svg class="net__instagram-img" aria-hidden="true" focusable="false" ><use xlink:href="img/sprite.svg#inst"></use></svg></a>
+                <a href="#"  aria-label="facebook" class="net__item" data-type="facebook"><svg class="net__facebook-img" aria-hidden="true" focusable="false" ><use xlink:href="img/sprite.svg#facebook-net"></use></svg></a>
+              </div>
+              <div class="net__copied hidden">Copied!</div>
+                      
+                       
+                      </div>
+                    </div>
+                     </div>
+    <script src="main.js"></script>
 </body>
 </html>

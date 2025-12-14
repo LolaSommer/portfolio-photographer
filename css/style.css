@@ -554,9 +554,15 @@ button, input, textarea, select {
     .nav__link:hover {
       border-bottom: 1px solid #22222b; }
 
+.active {
+  border-bottom: 1px solid #22222b; }
+
 .logo__img {
   width: clamp(100px, 20vw, 135px);
   height: auto; }
+
+.hidden {
+  display: none !important; }
 
 .btn {
   display: inline-flex;
@@ -589,5 +595,137 @@ button, input, textarea, select {
   .btn--secondary:hover {
     background-color: #22222b;
     color: #fff; }
+
+.thankyou__modal {
+  display: grid;
+  place-items: center;
+  z-index: 1000;
+  font-size: 18px;
+  position: fixed;
+  inset: 0; }
+.thankyou__window {
+  background: white;
+  position: relative;
+  color: black;
+  z-index: 1;
+  padding: clamp(0.938rem, 4vw, 1.875rem);
+  height: auto;
+  border-radius: 30px;
+  margin: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  max-width: 450px;
+  width: 100%; }
+.thankyou__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(2px); }
+.thankyou__close {
+  display: grid;
+  justify-self: end;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: black; }
+.thankyou__line {
+  position: relative; }
+.thankyou__icon {
+  width: 20px;
+  height: 20px; }
+.thankyou__button {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+.thankyou__btn {
+  border: none;
+  border-radius: 20px;
+  background: black;
+  color: white;
+  padding: 10px; }
+.thankyou__title, .thankyou__text {
+  text-align: center; }
+
+.net__modal {
+  display: grid;
+  place-items: center;
+  z-index: 1000;
+  font-size: 18px;
+  position: fixed;
+  inset: 0; }
+.net__window {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  position: relative;
+  color: black;
+  z-index: 1;
+  padding: clamp(0.938rem, 4vw, 1.875rem);
+  border-radius: 30px;
+  margin: 0 auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  height: 25vh;
+  width: 250px; }
+.net__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(2px); }
+.net__close {
+  display: grid;
+  justify-self: end;
+  margin-bottom: 25px;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: black; }
+.net__icon {
+  width: 20px;
+  height: 20px; }
+.net__line {
+  position: relative; }
+.net__group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 10px; }
+.net__title {
+  font-size: 20px;
+  text-align: center;
+  padding-block: 15px; }
+.net__x-img {
+  transform: translateY(-2px);
+  color: black; }
+.net__instagram-img {
+  color: black;
+  transform: translateY(1px); }
+.net__facebook-img {
+  transform: translateY(-2px);
+  color: black; }
+.net__x-img, .net__instagram-img, .net__facebook-img {
+  width: 45px;
+  height: 45px;
+  fill: currentColor;
+  stroke: currentColor;
+  translate: transform .3s ease, box-shadow .3s ease; }
+  .net__x-img:hover, .net__instagram-img:hover, .net__facebook-img:hover {
+    color: black; }
+.net__copied {
+  margin-top: 10px;
+  font-size: 18px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease; }
+  .net__copied.show {
+    opacity: 1; }
 
 /*# sourceMappingURL=style.css.map */
