@@ -64,23 +64,23 @@
        aria-valuenow="100" aria-labelledby="skill-ps"></div>
                             <div class="skills__info">
                                 <p class="skills__name" id="skill-ps">Adobe Photoshop</p>
-                                <p class="skills__value">100%</p>
+                                <p class="skills__value" data-level="100">100%</p>
                             </div>
                         </div>
                         <div class="skills__item">
-                            <div class="skills__bar skills__bar--indesign" style="--fill:65%"        role="progressbar" aria-valuemin="0" aria-valuemax="100"
+                            <div class="skills__bar skills__bar--indesign" style="--fill:65%" role="progressbar" aria-valuemin="0" aria-valuemax="100"
        aria-valuenow="65" aria-labelledby="skill-indesign"></div>
                             <div class="skills__info">
                                 <p class="skills__name" id="skill-indesign">Adobe Indesign</p>
-                                <p class="skills__value">65%</p>
+                                <p class="skills__value" data-level="65">65%</p>
                             </div>
                         </div>
                         <div class="skills__item">
-                            <div class="skills__bar skills__bar--xd" style="--fill:80%"  role="progressbar" aria-valuemin="0" aria-valuemax="100"
+                            <div class="skills__bar skills__bar--xd" style="--fill:80%" role="progressbar" aria-valuemin="0" aria-valuemax="100"
        aria-valuenow="80" aria-labelledby="skill-xd"></div>
                             <div class="skills__info">
                                 <p class="skills__name" id="skill-xd">Adobe XD</p>
-                                <p class="skills__value">80%</p>
+                                <p class="skills__value" data-level="80">80%</p>
                             </div>
                         </div>
                     </div>
@@ -170,22 +170,22 @@
             <p class="section-subtitle">Moments and landscapes from around the globe.</p>
             <div class="portfolio__grid">
                  <div class="portfolio__item portfolio__item--short">
-    <div class="portfolio__thumb"><img src="img/portfolio/work01.jpg" alt=""></div>
+    <div class="portfolio__thumb"><img class="portfolio__img" src="img/portfolio/work01.jpg" alt=""></div>
                  </div>
                   <div class="portfolio__item portfolio__item--tall">
-    <div class="portfolio__thumb"><img src="img/portfolio/work02.png" alt=""></div>
+    <div class="portfolio__thumb"><img  class="portfolio__img" src="img/portfolio/work02.png" alt=""></div>
                   </div>
                 <div class="portfolio__item portfolio__item--short">
-    <div class="portfolio__thumb"><img src="img/portfolio/work03.png" alt=""></div>
+    <div class="portfolio__thumb"><img class="portfolio__img" src="img/portfolio/work03.png" alt=""></div>
                 </div>
                 <div class="portfolio__item portfolio__item--tall">
-    <div class="portfolio__thumb"><img src="img/portfolio/work04.png" alt=""></div>
+    <div class="portfolio__thumb"><img class="portfolio__img" src="img/portfolio/work04.png" alt=""></div>
                 </div>
                       <div class="portfolio__item portfolio__item--tall">
-    <div class="portfolio__thumb"><img src="img/portfolio/work05.png" alt=""></div>
+    <div class="portfolio__thumb"><img class="portfolio__img" src="img/portfolio/work05.png" alt=""></div>
                       </div>
               <div class="portfolio__item portfolio__item--short">
-    <div class="portfolio__thumb"><img src="img/portfolio/work06.png" alt=""></div>
+    <div class="portfolio__thumb"><img class="portfolio__img" src="img/portfolio/work06.png" alt=""></div>
               </div>
             </div>
         </div>
@@ -270,12 +270,12 @@
             
             <form class="contact-form" action="">
                 <label class="visually-hidden" for="name">Full name</label>
-                <input class="contact-form__input" id="name" type="text" name="name" placeholder="Your Full Name">
+                <input class="contact-form__input" id="name" type="text" name="name" placeholder="Your Full Name" required>
                 <label class="visually-hidden" for="email">Email</label>
-                <input class="contact-form__input" id="email" type="email" name="email" placeholder="Email Address">
+                <input class="contact-form__input" id="email" type="email" name="email" placeholder="Email Address" required>
                 <label class="visually-hidden" for="message">Message</label>
                 <textarea class="contact-form__textarea" id="message" name="message" placeholder="Your Message"></textarea>
-                <button type="submit" class="btn btn--primary">Send Message</button>
+                <button type="submit" class="btn btn--primary" disabled>Send Message</button>
             </form>
         </div>
     </section>
@@ -313,7 +313,7 @@
                  <div class="thankyou__overlay"></div>
                  <div class="thankyou__line">
                  <button class="thankyou__close" aria-label="close">
-                      <svg class="thankyou__icon"><use href="img/sprite.svg#icon-close"></use></svg>
+                      <svg class="thankyou__icon"><use href="img/sprite.svg?v=2#icon-close"></use></svg>
                       </button>
                  <div class="thankyou__window">
                 <h2 class="thankyou__title">Thank you! I’ll get back to you soon.</h2>
@@ -327,7 +327,7 @@
                       <div class="net__overlay"></div>
                       <div class="net__line">
                       <button class="net__close" aria-label="close">
-                      <svg class="net__icon"><use href="img/sprite.svg#icon-close"></use></svg>
+                      <svg class="net__icon"><use href="img/sprite.svg?v=2#icon-close"></use></svg>
                       </button>
                       <div class="net__window">
                         <div class="net__title">Let’s connect on social media <span class="net__span"></span></div>
@@ -338,10 +338,19 @@
                 <a href="#"  aria-label="facebook" class="net__item" data-type="facebook"><svg class="net__facebook-img" aria-hidden="true" focusable="false" ><use xlink:href="img/sprite.svg#facebook-net"></use></svg></a>
               </div>
               <div class="net__copied hidden">Copied!</div>
-                      
-                       
                       </div>
                     </div>
+                     </div>
+                     <div class="modal-open foto__modal hidden">
+                        <div class="foto__overlay"></div>
+                        <div class="foto__line">
+                              <button class="foto__close" aria-label="close">
+                      <svg class="foto__icon"><use href="img/sprite.svg?v=2#icon-close"></use></svg>
+                      </button>
+                        <div class="foto__window">
+                        
+                        </div>
+                     </div>
                      </div>
     <script src="main.js"></script>
 </body>
